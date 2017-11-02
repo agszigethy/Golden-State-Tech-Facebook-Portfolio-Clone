@@ -1,0 +1,331 @@
+body, h1, h2, h3, h4, h5, h6, p, img, a, ul, li, ol {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-size: 100%;
+    line-height: 1px;
+}
+.normalText {
+    line-height: 16px;
+    color: grey;
+}
+header {
+    background: #3F5A93;
+    width: 100%;
+    height: 42px;
+    border-bottom: 1px solid black;
+}
+body {
+    background-color: #EDF0F5;
+    font-family: "San Francisco", Roboto, "Lucida Grande", "Helvetica Neue", Helvetica, sans-serif;
+}
+a {
+    text-decoration: none;
+}
+a:default {
+    color: #435B9A;
+    
+}
+a:active {
+    color: #EB5FB4;
+}
+a:visited {
+    color: #435B9A;
+}
+a:hover {
+    color: #EB5FB4;
+}
+.logo {
+    position: relative;
+    top: 22%;
+    left: 16%;
+    width: 25px;;
+    height: 25px;
+    background-color: #ffffff;
+}
+#cbLogo {
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #3F5A93;
+    padding: 18px 0px 0 12px;
+}
+.topSection {
+    width: 70%;
+    margin: 0 auto;
+}
+.coverArt {
+    margin-left: 0 auto;
+    width: 100%;
+    height: 255px;
+    border-right: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    
+}
+.coverArt img {
+    width: 100%;
+}
+.profilePhoto {
+    position: relative;
+    transform: translate(30%, -80%);
+    width: 12%;
+    padding: .5%;
+    background-color: #fff;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+    
+}
+.profilePhoto img {
+    border-radius: 2px;
+}
+nav {
+    width: 100%;
+    height: 50px;
+    
+    background-color: #ffffff;
+    border: 1px solid lightgray;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    z-index: -1;
+}
+nav ul li {
+    display: inline;
+    text-decoration: none;
+    font-weight: bold;
+    color: #3F5A93;
+    position: relative;
+    left: 20%;
+    top: 25px;
+    border-left: 1px solid lightgray; 
+    padding: 17px;
+}
+nav li:last-child {
+    border-right: 1px solid lightgray;
+} 
+.boxTitle {
+    background-color: #E9EAED;
+    color: dimgray;
+    font-size: 115%;
+    font-weight: 100;
+    border-bottom: 1px solid lightgray;
+    
+}
+.wrapper {
+    width: 70%;
+    margin: 2% auto;
+}
+.boxStyle {
+    border: 1px solid lightgray; 
+    border-radius: 5px 5px 5px 5px;
+    background-color: #ffffff;
+}
+aside {
+    float: left;
+    border-radius: 5px;
+    width: 25%;
+    box-sizing: border-box;
+}
+.flexBox {
+    display: inline-flex;
+    flex-direction: column;
+    font-size: 75%;
+    font-weight: 600;
+    line-height: 32px;
+    height: auto;  
+    border-radius: 5px;
+    vertical-align: top;
+}
+.flexItem{
+    background-color: white;
+    border-bottom: 1px solid lightgrey;
+    margin: 0 10% 0 10%;
+    color: darkgray;
+    font-weight: 100;
+    
+}
+.flexItem:last-child {
+    border-bottom: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.asideTitle {
+    background-color: #E9EAED;
+    text-align: center;
+    color: dimgray;
+    font-size: 115%;
+    font-weight: 100;
+    border-bottom: 1px solid lightgray;
+}
+
+.flexBoxMain {
+    display: inline-flex;
+    flex-direction: column;
+    font-size: 75%;
+    font-weight: 600;
+    line-height: 32px;
+    width: 54%;
+}
+main {
+    display: none!important;
+
+}
+.writePost {
+    border-radius: 5px;
+    
+}
+.mainTitle {
+    padding-left: 3%;
+    color: dimgray;
+    font-size: 115%;
+    border-bottom: 1px solid lightgray;
+    background-color: #E9EAED;
+}
+.mainFlexItem{
+    margin: 3% 3% 3% 3%;
+}
+input[type=text] {
+    width: 100%;
+    padding: 5px;
+    margin-right: 2%;
+    font-size: 100%
+}
+.postTextElement {
+    margin-bottom: 2%;
+    
+}
+.postTextField {
+    height: 100px;
+}
+.topPost {
+    
+    margin-top: 2%;
+    border-radius: 5px;
+}
+.userComment {
+    border-top: 1px solid grey; 
+    border-bottom: 1px solid grey;
+    color: grey;
+}
+.userComment p {
+    display: inline-block;
+    margin: 0 0 0 2%;
+    vertical-align: text-top;
+}
+#commentPhoto {
+    width: 5%;
+    margin-top: 1%;
+}
+.gallery {
+    display: inline-flex;
+    width: 75%;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 0;
+}
+figure {
+    margin-top: 0;
+}
+.galleryEntry {
+    margin: 0;
+    margin-bottom: 3%;
+    padding-left: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.galleryEntry:last-child {
+    margin-left: 4%;
+}
+
+figcaption {
+    margin-top: 5%;
+    
+}
+
+@media only screen and (max-width: 1375px) {
+ 
+    .gallery {
+        display: block;
+        float: left;
+    }
+    
+    .galleryEntry img{
+        width: 100%;
+        height: auto;
+
+    }
+    .galleryEntry:last-child {
+    margin-left: 0;
+}
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .profilePhoto {
+        width: 20%;
+    }
+    
+    nav ul li{
+    display: inline;
+    text-decoration: none;
+    font-weight: bold;
+    color: #3F5A93;
+    position: relative;
+    left: 40%;
+    top: 25px;
+    border-left: 1px solid lightgray;
+    padding: 17px;
+    }
+    .coverArt {
+        max-width: 100%;
+    
+}
+    nav {
+        width: 100%;
+    }
+    
+    aside {
+        width: 25%;
+    }
+
+}
+
+@media only screen and (max-width: 440px) {
+    
+    .profilePhoto {
+        width: 25%;
+    }
+
+    aside {
+        width: 30%;
+    }
+    .gallery {
+        width: 70%;
+        display: block;
+        float: left;
+
+    }
+    .galleryEntry {
+        width: 70%;
+        margin-left: 15%;
+        padding: 3% 0;
+    }
+    .galleryEntry:first-child {
+        padding: 0;
+    }
+    .galleryEntry:last-child {
+        margin-left: 15%;
+    }
+    .galleryEntry img{
+        width: 120%;
+        height: auto;
+}
+
+    }
+    figcaption {
+        width: 120%;
+        margin-top: 10%;
+    }
+}
