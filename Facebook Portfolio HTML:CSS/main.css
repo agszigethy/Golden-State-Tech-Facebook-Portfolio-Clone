@@ -163,7 +163,8 @@ aside {
     font-size: 75%;
     font-weight: 600;
     line-height: 32px;
-    width: 54%;
+    width: 74%;
+    margin-left: 1%;
 }
 main {
     display: none!important;
@@ -184,9 +185,8 @@ main {
     margin: 3% 3% 3% 3%;
 }
 input[type=text] {
-    width: 100%;
+    width: 98%;
     padding: 5px;
-    margin-right: 2%;
     font-size: 100%
 }
 .postTextElement {
@@ -197,7 +197,6 @@ input[type=text] {
     height: 100px;
 }
 .topPost {
-    
     margin-top: 2%;
     border-radius: 5px;
 }
@@ -216,6 +215,7 @@ input[type=text] {
     margin-top: 1%;
 }
 .gallery {
+/*    display: none!important;*/
     display: inline-flex;
     width: 75%;
     justify-content: flex-start;
@@ -260,7 +260,17 @@ figcaption {
     margin-left: 0;
 }
 }
-
+@media only screen and (max-width: 900px){
+    aside{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1%;
+    }
+    .flexBoxMain {
+        width: 100%;
+        margin-left: 0;
+    }
+}
 @media only screen and (max-width: 600px) {
     
     .profilePhoto {
@@ -268,27 +278,30 @@ figcaption {
     }
     
     nav ul li{
-    display: inline;
-    text-decoration: none;
-    font-weight: bold;
-    color: #3F5A93;
-    position: relative;
-    left: 40%;
-    top: 25px;
-    border-left: 1px solid lightgray;
-    padding: 17px;
+        display: inline;
+        text-decoration: none;
+        font-weight: bold;
+        color: #3F5A93;
+        position: relative;
+        left: 40%;
+        top: 25px;
+        border-left: 1px solid lightgray;
+        padding: 17px;
     }
-    .coverArt {
-        max-width: 100%;
-    
+    #commentPhoto {
+        display: inline-block;
+        width: 10%;
+        margin-top: 1%;
+    }
+    .userComment p {
+        width: 85%;
+        margin: 0 0 2% 2%;
+        line-height: 1.5em;
+        margin-top: -7%;
 }
-    nav {
-        width: 100%;
-    }
-    
-    aside {
-        width: 25%;
-    }
+    .topPost input[type=text]{
+        width: 97%;
+    } 
 
 }
 
@@ -299,8 +312,17 @@ figcaption {
     }
 
     aside {
-        width: 30%;
+        width: 100%;
     }
+    
+    input[type=text] {
+    width: 95%;
+    padding: 5px;
+    font-size: 100%
+}
+    .topPost input[type=text]{
+        width: 96%;
+    } 
     .gallery {
         width: 70%;
         display: block;

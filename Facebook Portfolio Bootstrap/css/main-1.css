@@ -145,7 +145,7 @@ ul li:last-child {
 }
 .mainSection {
     padding-right: 0;
-/*    display: none;*/
+    display: none;
 }
 .gallerySection {
     margin-top: 1%;
@@ -155,7 +155,7 @@ ul li:last-child {
     flex-wrap: wrap;
     box-sizing: border-box;
     padding: 0;
-    display: none;
+/*    display: none;*/
 }
 .galleryEntry img{
     width: 200px;
